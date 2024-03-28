@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Rubik and raleway font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- Custom tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom css -->
+    <style>
+        .font-rubik {
+            font-family: "Rubik", sans-serif;
+        }
+
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
+    <title>E Learner</title>
+</head>
+
+<body class="font-rubik">
+    <!-- Navbar -->
+    <nav class="bg-white container mx-auto grid grid-cols-3 py-2 items-center">
+        <div class="col-span-1"><img src="assets/Logo.png" alt=""></div>
+        <div class="col-span-2 flex items-center justify-around">
+
+            <div>
+                <ul class="uppercase flex items-center gap-10 py-5 px-3 text-lg font-semibold">
+                    <li>Home</li>
+                    <li>Professors</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex gap-7 text-lg font-semibold items-center">
+                    <li>Sign In</li>
+                    <li class="bg-gradient-to-r from-[#7FACD6] to-[#598496] rounded-[10px] text-white px-8 py-4">
+                        Register
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner section -->
+    <section
+        class="bg-gradient-to-br from-[#7FACD6] to-[#598496] min-h-[calc(100vh-84px)] flex items-center justify-center flex-col">
+        <h2 class="uppercase text-white space p-3 bg-white bg-opacity-20 rounded-lg  font-medium">
+            Cutting-Edge
+            E-Learning Platform
+        </h2>
+        <h1 class="font-raleway text-5xl font-extrabold text-white max-w-screen-sm text-center mt-2 mx-auto">
+            Unlock
+            Your
+            Learning
+            Potential</h1>
+        <p class="text-xl text-white max-w-screen-md text-center mx-auto my-4">Empower
+            Yourself: Unleash
+            Your
+            Learning
+            Potential with Our
+            Cutting-Edge
+            E-Learning
+            Platform.
+            Discover a
+            dynamic virtual environment designed to unlock the full scope of your educational journey</p>
+        <div class="w-1/2 mx-auto flex gap-4">
+            <input type="text" name="" id="" placeholder="Search for Instructor" class="p-6 rounded-[10px] flex-1">
+            <button
+                class="bg-gradient-to-r from-[#7FACD6] to-[#598496] py-5 px-9 text-base font-semibold text-white rounded-[10px]">Start
+                Learning Now</button>
+        </div>
+    </section>
+</body>
+
+</html>
