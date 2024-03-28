@@ -47,38 +47,41 @@
 
 <body class="font-rubik">
     <!-- Navbar -->
-    <nav
-        class="bg-white container mx-auto flex justify-between px-5 lg:px-0  lg:grid lg:grid-cols-3 py-4 lg:py-2 items-center">
-        <div class="col-span-1"><img src="assets/Logo.png" alt=""></div>
-        <div class="col-span-2 hidden lg:flex items-center justify-around">
+    <nav class="w-full">
+        <div
+            class="bg-white container w-full mx-auto flex justify-between px-5 lg:px-0  lg:grid lg:grid-cols-3 py-4 lg:py-2 items-center">
 
-            <div>
-                <ul class="uppercase flex items-center gap-10 py-5 px-3 text-lg font-semibold">
-                    <li>Home</li>
-                    <li>Professors</li>
-                </ul>
+            <div class="col-span-1"><img src="assets/Logo.png" alt=""></div>
+            <div class="col-span-2 hidden lg:flex items-center justify-around">
+
+                <div>
+                    <ul class="uppercase flex items-center gap-10 py-5 px-3 text-lg font-semibold">
+                        <li>Home</li>
+                        <li>Professors</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="flex gap-7 text-lg font-semibold items-center">
+                        <li>Sign In</li>
+                        <li class="bg-gradient-to-r from-[#7FACD6] to-[#598496] rounded-[10px] text-white px-8 py-4">
+                            Register
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <ul class="flex gap-7 text-lg font-semibold items-center">
-                    <li>Sign In</li>
-                    <li class="bg-gradient-to-r from-[#7FACD6] to-[#598496] rounded-[10px] text-white px-8 py-4">
-                        Register
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- mobile menu -->
-        <div class="lg:hidden relative">
-            <img src="assets/Vector.png" id="menu-btn" alt="" class="cursor-pointer">
-            <div class="absolute bg-white rounded-lg right-0 top-5 hidden" id="mobileMenu">
-                <ul class="uppercase py-5 px-3 text-lg font-medium">
-                    <li>Home</li>
-                    <li>Professors</li>
-                    <li>Sign In</li>
-                    <li class="bg-gradient-to-r from-[#7FACD6] to-[#598496] rounded-[10px] text-white px-2 py-2">
-                        Register
-                    </li>
-                </ul>
+            <!-- mobile menu -->
+            <div class="lg:hidden relative">
+                <img src="assets/Vector.png" id="menu-btn" alt="" class="cursor-pointer">
+                <div class="absolute bg-white rounded-lg right-0 top-5 hidden" id="mobileMenu">
+                    <ul class="uppercase py-5 px-3 text-lg font-medium">
+                        <li>Home</li>
+                        <li>Professors</li>
+                        <li>Sign In</li>
+                        <li class="bg-gradient-to-r from-[#7FACD6] to-[#598496] rounded-[10px] text-white px-2 py-2">
+                            Register
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -117,10 +120,53 @@
 
 
     <!-- Instructor section -->
-    <section>
-        
+    <section class="bg-black min-h-screen flex justify-center items-center flex-col">
+
+
+        <h3 class="uppercase font-bold text-white">tOP Instructor</h3>
+        <hr class="border-2 border-[#7FACD6] w-32">
+
+        <h1 class="font-raleway font-semibold text-4xl text-white mt-6 text-center">Check out our Top Instructors</h1>
+        <div class="lg:flex items-center gap-7 mt-20 ">
+            <div class="relative h-[400px] w-[300px] ">
+                <img src="assets/ins1.png" alt="AirMax Pro" class="z-0 h-full w-full  object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                <div class="absolute bottom-4 left-4 text-left">
+                    <h1 class="text-lg font-semibold text-white">Instructor Name</h1>
+                    <p class="mt-2 text-sm text-gray-300">
+                        Biology Major
+                    </p>
+                </div>
+            </div>
+            <div class="relative w-[300px] ">
+                <img src="assets/ins2.png" alt="AirMax Pro" class="z-0 h-full w-full  object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                <div class="absolute bottom-4 left-4 text-left">
+                    <h1 class="text-lg font-semibold text-white">Instructor Name</h1>
+                    <p class="mt-2 text-sm text-gray-300">
+                        Biology Major
+                    </p>
+                </div>
+            </div>
+            <div class="relative h-[400px] w-[300px] ">
+                <img src="assets/ins3.png" alt="AirMax Pro" class="z-0 h-full w-full  object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                <div class="absolute bottom-4 left-4 text-left">
+                    <h1 class="text-lg font-semibold text-white">Instructor Name</h1>
+                    <p class="mt-2 text-sm text-gray-300">
+                        Biology Major
+                    </p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
+
+    <!-- Testimonials Section -->
+    <section>
+        <h2>Learners Testimonials</h2>
+    </section>
 
 
     <!-- Js code -->
