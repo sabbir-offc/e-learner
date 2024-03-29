@@ -87,16 +87,19 @@
     </nav>
 
     <!-- Searchbar -->
-    <section class="py-7 border-b-2">
-        <div class="container mx-auto p-[30px] lg:border-2 border-[#E3DBDB] rounded-2xl">
+    <section class="py-4 lg:py-7 border-b-2 shadow-lg lg:shadow-none">
+        <div class="container mx-auto p-5 lg:p-[30px] lg:border-2 border-[#E3DBDB] rounded-2xl">
             <div class="w-full mx-auto flex flex-col lg:flex-row items-center justify-center gap-4">
                 <input type="text" name="" id="" placeholder="Search for Instructor"
                     class="p-6 rounded-[10px] focus:outline-none w-full bg-[#F5F5F5]  border-[#E3DBDB] border-2">
                 <button
                     class="bg-gradient-to-r from-[#7FACD6] to-[#598496] w-full lg:w-auto py-6 px-9 text-base font-semibold text-white rounded-[10px]">Search</button>
             </div>
-
-            <div class="my-4 flex items-end justify-between gap-7">
+            <div class="mt-5 flex justify-between items-center lg:hidden">
+                <h3 class="text-sm font-medium text-[#4A4A4A] uppercase">Filters & Sort</h3>
+                <img src="assets/mingcute_down-line.png" alt="">
+            </div>
+            <div class="my-4 lg:flex items-end justify-between gap-7 hidden ">
                 <div>
                     <p class="text-[#8E9296] text-sm tracking-wider uppercase">Filters</p>
                     <button class="text-sm font-medium p-3 border-2 border-[#CACACA] rounded-lg mt-4">
