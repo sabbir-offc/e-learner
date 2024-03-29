@@ -395,6 +395,92 @@
 
     </section>
 
+    <!-- FAQ Section -->
+    <section class="my-20">
+        <div class="container mx-auto  text-[#1E1E1E] grid lg:grid-cols-2 gap-16">
+            <div>
+                <h3 class="text-[22px] font-medium">Faqs</h3>
+                <h2 class="font-raleway font-bold text-[44px]">Frequently asked
+                    questions</h2>
+                <div class="mt-10">
+                    <div class="accordion ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header py-3 cursor-pointer flex justify-between items-center "
+                                data-accordion-target="#accordion-content-1">
+                                <span class="text-[22px] font-bold font-raleway">What benefits i get from this
+                                    platform</span>
+                                <svg class="w-5 h-5 transition rotate-90 transform duration-200 ease-in-out"
+                                    data-accordion-icon>
+                                    <path stroke="currentColor" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </h2>
+                            <hr>
+                            <div id="accordion-content-1" class="accordion-content py-4 hidden ">
+                                <p class="text-[#4A4A4A]">One significant benefit of using this platform
+                                    is its versatility. With a wide range of
+                                    courses spanning various subjects and skill levels, users have the flexibility to
+                                    tailor
+                                    their learning experience to their specific interests and goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header py-3 cursor-pointer flex justify-between items-center "
+                                data-accordion-target="#accordion-content-2">
+                                <span class="text-[22px] font-bold font-raleway">What benefits i get from this
+                                    platform</span>
+                                <svg class="w-5 h-5 transition rotate-90 transform duration-200 ease-in-out"
+                                    data-accordion-icon>
+                                    <path stroke="currentColor" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </h2>
+                            <hr>
+
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header py-3 cursor-pointer flex justify-between items-center "
+                                data-accordion-target="#accordion-content-3">
+                                <span class="text-[22px] font-bold font-raleway">What benefits i get from this
+                                    platform</span>
+                                <svg class="w-5 h-5 transition rotate-90 transform duration-200 ease-in-out"
+                                    data-accordion-icon>
+                                    <path stroke="currentColor" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </h2>
+                            <hr>
+
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header py-3 cursor-pointer flex justify-between items-center "
+                                data-accordion-target="#accordion-content-4">
+                                <span class="text-[22px] font-bold font-raleway">What benefits i get from this
+                                    platform</span>
+                                <svg class="w-5 h-5 transition rotate-90 transform duration-200 ease-in-out"
+                                    data-accordion-icon>
+                                    <path stroke="currentColor" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </h2>
+                            <hr>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <img src="assets/faq.png" alt="">
+            </div>
+        </div>
+
+
+
+    </section>
 
 
     <!-- Footer section -->
@@ -463,6 +549,30 @@
                 }
             });
         });
+
+        //accordion code
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = document.querySelector(header.dataset.accordionTarget);
+                content.classList.toggle('hidden');
+
+                const icon = header.querySelector('[data-accordion-icon]');
+                icon.classList.toggle('-rotate-90');
+                accordionHeaders.forEach(otherHeader => {
+                    if (otherHeader !== header) {
+                        const otherContent = document.querySelector(otherHeader.dataset.accordionTarget);
+                        otherContent.classList.add('hidden');
+                        const otherIcon = otherHeader.querySelector('[data-accordion-icon]');
+                        otherIcon.classList.remove('-rotate-180');
+                    }
+                });
+            });
+        });
+
+
+
     </script>
 </body>
 
